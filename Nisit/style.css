@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* background */
+body {
+  background-image: url('https://images.unsplash.com/photo-1515063312047-b40b86035e20?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  align-items: center;
+  margin-top: 20px;
+  background-color: aliceblue;
+  padding-bottom: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* header */
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: rgb(255, 166, 0);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* dropdown hero */
+  .select-menu {
+    width: 380px;
+  }
+
+  .select-menu .select-btn {
+    display: flex;
+    height: 55px;
+    background: #e4e4e4;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+    color: #000;
+    font-weight: bold;
+  }
+
+  .select-btn i {
+    font-size: 25px;
+  }
+
+  .select-menu .options {
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    color: black;
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .select-menu.active .options {
+    display: none;
+  }
+  
+  .options {
+    position: fixed;
+  }
+
+  .options .option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .options .option:hover {
+    background: #F2F2F2;
+  }
+
+  .option i {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+
+  .option .option-text {
+    font-size: 18px;
+    color: #333;
+
+  }
+
+/* dropdown */
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: #ece7e757;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dropdown_menu_open {
+    height: 240px;
+    display: none;
+  }
+
+  .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+/* Nisit */
+  section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+
+  #hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #hero p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+
+/* Blog */
+.container {
+  text-align: center;
+  background-color: rgb(245, 245, 245);;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.container h11 {
+  padding-top: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card .card1 {
+  margin: 15px;
+  background-color: #ffffff;
+  width: 390px;
+  height: 600px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card .card1 h1,p {
+  color: black;
+  text-align: left;
+  margin: 25px;
+}
+.card .card1 h1 {
+  color: black;
+  font-size: 20px;
+}
+
+.card .card1 img {
+  width: 100%; 
+  height: auto; 
+}
+
+.card .card1 {
+  transition: transform 0.3s ease;
+}
+
+.card .card1:hover {
+  transform: translateY(-10px); 
+}
+
+.card-btn {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgb(255, 166, 0);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 10px;
+  margin-right: 51%;
+  width: 9rem;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+
+}
+
+.navbar .toggle_btn {
+  display: block;
+}
+
+.dropdown_menu {
+  display: block;
+  }
+}
+
+/* <a href="#" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+<script src="main.js"></script>
+css------------------ 
+.to-top {
+  background: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 16px;
+  right:15px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#ffffff;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+JS--------------------------
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
