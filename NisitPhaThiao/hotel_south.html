@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/hotel.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NisitPhaThiao</title>
+
+	<!-- Google Fonts Link For Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+
+<body>
+	<div class="gotopbtn">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+
+		<div class="loader"></div>
+
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="img/logo.png" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+<div class="big">
+	<div class="container_hotel">
+		<h1 class="section__title" data-aos="fade-up" data-aos-duration="1000">ที่พักน่าสนใจ</h1>
+		<p class="section__subtitle" data-aos="fade-up" data-aos-duration="1000">ที่พักที่น่าสนใจของภาคใต้</p>
+	
+		<div class="hotel">
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hotel-image">
+					<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/361767453.jpg?k=6ca2db969409a88928a95ae2700f6597d3f5fb10840fc330cdc21b538819a62b&o=&hp=1" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">ทราย พีพี ไอแลนด์ วิลเลจ รีสอร์ต</div>
+					<div class="details_hotel">49 ม.8 ต.อ่าวนาง อ.เมือง จ.กระบี่ 81000</div>
+					<p>ทราย พีพี ไอส์แลนด์ วิลเลจ สวรรค์แห่งการพักผ่อนครอบคลุมพื้นที่กว่า 170 ไร่ริมชายหาดบนเกาะพีพีดอน ที่มีหาดทรายขาวละเอียดยาวกว่า 800 เมตร พร้อมห้องพัก<br>และสิ่งอำนวยความสะดวกครบครัน ตั้งแต่ย่างก้าวแรก ณ ล็อบบี้แบบเปิดโล่งของรีสอร์ต<br>ที่สวยงาม สระว่ายน้ำสองสไตล์ สปาบรรยากาศผ่อนคลาย พร้อมวิวทะเลบนเนินเขา <br>ร้านอาหารนานาชาติ</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.saiiresorts.com/th/phiphiisland/village/" class="card-btn2">https://www.saiiresorts.com</a>
+				</div>
+			</div>
+
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hotel-image">
+					<img src="https://pix8.agoda.net/hotelImages/5692215/-1/e731b7e9155e3de085f61049769d8127.jpg?ce=0&s=1024x768" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">คาลิมา รีสอร์ท แอนด์ วิลล่า เขาหลัก</div>
+					<div class="details_hotel">3/88 ม.2 ต.บ้านเขาหลัก อ.เมือง จ.พังงา 82210</div>
+					<p>คาลิมา รีสอร์ท แอนด์ วิลล่า ตั้งอยู่ในเขาหลัก <br>ห่างจากอนุสรณ์สถานสึนามิ เรือ ต.813 10 กม. ให้บริการที่พักพร้อมจักรยานให้ใช้ฟรี <br>ที่จอดรถส่วนตัวฟรี สระว่ายน้ำกลางแจ้ง และศูนย์ออกกำลังกาย ที่พักแห่งนี้มีบริการเลานจ์ นอกจากนี้ก็ยังมีห้องอาหาร สวนน้ำ และสนามเด็กเล่นให้ผู้เข้าพักใช้บริการ</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.agoda.com/th-th/kalima-resort-villas-khao-lak/hotel/khao-lak-th.html?cid=1844104&ds=hDDZCnXFo%2BlqeVsp" class="card-btn2">https://www.agoda.com/kalima-resort-villas-khao-lak</a>
+				</div>
+			</div>
+
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hotel-image">
+					<img src="https://www.reefresortkradan.com/wp-content/uploads/2020/12/reef-resort-9.jpg" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">รีฟ รีสอร์ท</div>
+					<div class="details_hotel">221/2 ม.2 ต.เกาะลิบง อ.กันตัง จ.ตรัง 92110</div>
+					<p>คุณจะได้ใช้ชีวิตในช่วงเวลาแห่งการพักผ่อนที่สมบูรณ์ แบบไม่รู้ลืมที่รายล้อมไปด้วยทะเล<br>ที่สวยงามและธรรมชาติที่ไม่ถูกทำลาย ชายหาดสีขาวทะเลสีเขียวมรกตที่มีพืชพรรณ<br>ที่มีชีวิตชีวาและความหลากหลายของสีสันของแนวปะการังที่สวยงาม</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.reefresortkradan.com/th/" class="card-btn2">https://www.reefresortkradan.com</a>
+				</div>
+			</div>
+
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hotel-image">
+					<img src="https://pix8.agoda.net/hotelImages/9723702/-1/7a56a5ec680cc2f08117538b9b55a779.jpg?ca=14&ce=1&s=1024x768" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">อนัญญา หลีเป๊ะ รีสอร์ท</div>
+					<div class="details_hotel">เกาะหลีเป๊ะ ต.เกาะตะรุเตา อ.เมือง จ.สตูล 91000</div>
+					<p>อนัญญา หลีเป๊ะ รีสอร์ท ติดชายหาด พร้อมสิ่งอำนวยความสะดวกครบครัน พร้อมสระว่ายน้ำ<br>ที่ใหญ่ที่สุดบนเกาะหลีเป๊ะ ในตอนเย็นสามารถนั่งชมพระอาทิตย์ตกที่หน้าหาด<br>และรับประทานอาหาร ที่เราพร้อมรับรองได้ว่าคุณจะ ประทับใจกับการผ่อนคลายที่ลืมไม่ลงนี้</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.ananyalipe.com/" class="card-btn2">https://www.ananyalipe.com</a>
+				</div>
+			</div>
+
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hotel-image">
+					<img src="https://pix8.agoda.net/hotelImages/8714725/-1/6e484146f2ed935f2a32f7b165c646de.jpg?ca=20&ce=0&s=1024x768" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">หมู่บ้านมอแกนเชิงนิเวศ</div>
+					<div class="details_hotel">170 ม.2 เกาะพระทอง จ.พังงา 82150</div>
+					<p>เที่ยวพังงาได้อย่างสบายใจเมื่อเข้าพักที่นี่ ที่พักได้รับใบรับรองมาตรฐาน SHA Plus <br>และมีที่จอดรถฟรีให้บริการ ที่พักตั้งอยู่ในย่านเกาะพระทองของพังงา ผู้เข้าพักจึงได้อยู่ใกล้สถานที่ท่องเที่ยวน่าสนใจและร้านอาหารอร่อยๆ ที่พัก 4.5 ดาว คุณภาพสูงแห่งนี้<br>มีบริการนวด, ห้องอาหาร และ สปา คอยอำนวยความสะดวกแก่ผู้เข้าพัก</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.agoda.com/th-th/the-moken-eco-village/hotel/phang-nga-th.html" class="card-btn2">https://www.agoda.com/the-moken-eco-village</a>
+				</div>
+			</div>
+
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000"> 
+				<div class="hotel-image">
+					<img src="https://pix8.agoda.net/hotelImages/736/736961/736961_16102115470048013329.jpg?ca=6&ce=1&s=1024x768" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">ทุยบลู เดอะ แพสเซจ สมุยไพรเวท พูลวิลล่าแอนด์บีช รีสอร์ท</div>
+					<div class="details_hotel">57/6-7 ม.5 ต.อ่างทอง อ.เกาะสมุย จ.สุราษฎร์ธานี 84140</div>
+					<p>บริการห้องพักพร้อมสระว่ายน้ำส่วนตัวให้เลือกมากมาย สัมผัสบรรยากาศธรรมชาติ<br>สถานที่พักผ่อนริมชายหาด วิวทะเลสุดพิเศษ ร้านอาหารชั้นเลิศ ด้วยการบริการที่เอาใจใส่ <br>เหมาะสำหรับคู่รักที่กำลังมองหาสถานที่พักผ่อนสุดโรแมนติกหรือฮันนีมูน<br> รีสอร์ทของเรานิยมเป็นตัวเลือกสำหรับการพักผ่อน</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://tuibluethepassage.com/th" class="card-btn2">https://tuibluethepassage.com</a>
+				</div>
+			</div>
+
+			<div class="hotel-card" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="hotel-image">
+					<img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/419094491.jpg?k=a12a775b984ea7bdadb70af2498c979c795cb0b90c8bcd2dbe1f6e5e639a0d60&o=" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel">บ่อแสน พูลวิลล่า</div>
+					<div class="details_hotel">19/3 ม.1 ต.บ่อแสน อ.ทับปุด จ.พังงา 82180</div>
+					<p>บ่อแสน พูลวิลล่า ให้บริการที่พักที่เงียบสงบในสวนเขตร้อน วิลล่าพร้อมพื้นที่ปรุงอาหารและซักรีด ที่แห่งนี้มีสระว่ายน้ำส่วนตัว อ่างสปา สวนหย่อม และที่จอดรถส่วนตัวในสถานที่ <br>ที่ห้องอาหาร Grand View เป็นลานเฉลียงกลางแจ้งสำหรับรับประทานอาหารที่ให้บริการบุฟเฟต์อาหารเช้าและอาหารค่ำ และสำหรับอาหารมื้อเย็น วิลล่าให้บริการอาหารตามสั่ง</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.facebook.com/Borsaen/?locale=th_TH" class="card-btn2">https://www.facebook.com/Borsaen</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="img/logo.png" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="index.html">หน้าหลัก</a></li>
+					<li><a href="location_index.html">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+					<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ช่องทางติดต่อ</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+	<script>
+		AOS.init();
+	  </script>
+	</body>
+</html>

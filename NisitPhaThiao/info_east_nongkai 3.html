@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/information.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NisitPhaThiao</title>
+
+	<!-- scripts -->
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+<body>
+
+	<div class="gotopbtn">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+
+		<div class="loader"></div>
+
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="img/logo.png" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+<div class="big">
+	<div class="container_information">
+
+		<div class="links_information">
+			<a href="index.html">หน้าหลัก</a>
+			<span>•</span>
+			<a href="location_east.html">สถานที่ท่องเที่ยว</a>
+			<span>•</span>
+			<a href="east.html">ภาคตะวันออกเฉียงเหนือ</a>
+			<span>•</span>
+			<span>วัดถ้ำศรีมงคล หนองคาย</span>
+		</div>
+		<span class="title">วัดถ้ำศรีมงคล หนองคาย</span>
+		<div class="image_title">
+			<img src="https://cms.dmpcdn.com/travel/2020/10/05/ea98aa90-06d0-11eb-b20d-4fbe3b052d33_original.jpg" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+		<div class="information_details" data-aos="fade-up" data-aos-duration="1000">
+			<p>วัดถ้ำศรีมงคล หรืออีกชื่อเรียกก็คือ ถ้ำดินเพียง อยู่ที่ บ้านดงต้อง ตำบลผาตั้ง อำเภอสังคม จังหวัดหนองคาย สถานที่แห่งนี้ มีตำนานเรื่องเล่าเกี่ยวกับเรื่อง<br>พญานาค จนหลายๆ คนต้องเดินทางมาเพื่อไหว้ขอพรพญานาคกันถึงที่นี่เลย โดยภายในถ้ำนั้น จะมีความชื้นอยู่ตลอดเวลาและมีลักษณะโพรงให้เดินลอดผ่านเข้าไป <br>ซึ่งลักษณะของถ้ำดินเพียงนี้ คล้ายเมืองบาดาลของพญานาคตามความเชื่อของชาวบ้านนั่นเอง และที่สำคัญคือมีจุดเชื่อมต่อกับลำน้ำโขงอีกด้วย
+
+				<br>
+				<br>  ตำนานว่ากันว่า ที่นี่เป็นทางเข้าออกของธิดาพญานาค ที่มาหลงรักเจ้าชายในเมืองโลกมนุษย์นี้ แต่พอถึงวันออกพรรษา ธิดาพญานาคนั้น ก็ต้องกลับลงสู่เมืองบาดาล จนเมื่อเจ้าชายตามมาพบ ถึงรู้ว่าคนรักของตนเป็นพญานาค เลยขอตัดขาดจากกัน นอกจากนี้ก็ยังมีความเชื่อที่ว่าถ้ำนี้ เป็นเส้นทางสู่เมืองพญานาคอีกด้วย <br>มีเรื่องเล่ากันอีกว่า ในถ้ำแห่งนี้เป็นเส้นทางที่พระธุดงด์จากฝั่งลาวใช้ข้ามลอดแม่น้ำโขงมายังฝั่งไทย โดยจะต้องเป็นพระผู้ทรงศีลเท่านั้น ถึงจะค้นพบเส้นทางนี้ได้
+
+				<br>
+				<br>
+				<br>ข้อมูลและภาพจาก : <a href="https://travel.trueid.net/detail/VOXDVKqPg7nO">https://travel.trueid.net</a>
+			</p>
+		</div>
+
+		<div class="slider" style="margin-top: 90px;" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="list">
+                <div class="item">
+                    <img src="https://ik.imagekit.io/tvlk/blog/2021/11/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B8%A5-2.jpg?tr=dpr-2,w-675" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://paikondieow.com/wp-content/uploads/2021/12/11-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://tatapi.tourismthailand.org/tatfs/Image/CustomPOI/Picture/P03012610_1.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://img.wongnai.com/p/1920x0/2019/12/21/e02a4f0766884427ab31e35c58499be5.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons" >
+                <button id="prev" ><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+		<div class="hotel">
+			<h class="border">ที่พักน่าสนใจ</h>
+			<div class="hotel-card">
+				<div class="hotel-image" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/b5/57/9f/caption.jpg?w=700&h=-1&s=1" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel" data-aos="fade-up" data-aos-duration="1000">บ้านไม้ริมโขง รีสอร์ท</div>
+					<div class="details_hotel" data-aos="fade-up" data-aos-duration="1000">181 ม.3 ต.ผาตั้ง อ.สังคม จ.หนองคาย 43160</div>
+					<p data-aos="fade-up" data-aos-duration="1000">เรือนไม้ที่ตั้งอยู่ริมแม่น้ำโขง ที่นี่คือ บ้านไม้ริมโขง รีสอร์ท ที่พักสำหรับนักเดินทางที่ชื่นชอบ<br>วิถีชีวิตอันสุดสงบ บริการที่นี่มีห้องพักราคาประหยัด พร้อมห้องอาหาร ห้องประชุม<br>ห้องคาราโอเกะ ให้คุณได้ใช้เวลาพักผ่อนที่นี่อย่างมีความสุข</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://th.tripadvisor.com/Hotel_Review-g2237523-d8869794-Reviews-Banmai_Rimkong_Resort-Sangkhom_Nong_Khai_Province.html" class="card-btn2">https://th.tripadvisor.com/Banmai_Rimkong_Resort</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="map">
+			<div class="border"></div>
+			<h3>Google Maps</h3>
+			<iframe data-aos="zoom-in" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15181.449504959677!2d102.3021491!3d17.9618699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x312417100c0a2203%3A0x1f3ccdca9a45f7e4!2z4Lin4Lix4LiU4LiW4LmJ4Liz4Lio4Lij4Li14Lih4LiH4LiE4Lil!5e0!3m2!1sth!2sth!4v1710251616777!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+	</div>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="img/logo.png" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="index.html">หน้าหลัก</a></li>
+					<li><a href="location_index.html">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+					<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ช่องทางติดต่อ</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+	<script>
+		let slider = document.querySelector('.slider .list');
+		let items = document.querySelectorAll('.slider .list .item');
+		let next = document.getElementById('next');
+		let prev = document.getElementById('prev');
+		let dots = document.querySelectorAll('.slider .dots li');
+
+		let lengthItems = items.length - 1;
+		let active = 0;
+	next.onclick = function(){
+	active = active + 1 <= lengthItems ? active + 1 : 0;
+	reloadSlider();
+		}
+	prev.onclick = function(){
+	active = active - 1 >= 0 ? active - 1 : lengthItems;
+		reloadSlider();
+		}
+	let refreshInterval = setInterval(()=> {next.click()}, 3000);
+	function reloadSlider(){
+	slider.style.left = -items[active].offsetLeft + 'px';
+	let last_active_dot = document.querySelector('.slider .dots li.active');
+	last_active_dot.classList.remove('active');
+	dots[active].classList.add('active');
+
+	clearInterval(refreshInterval);
+	refreshInterval = setInterval(()=> {next.click()}, 7500); //เวลารูป
+	}
+	dots.forEach((li, key) => {
+	li.addEventListener('click', ()=>{
+	 active = key;
+		 reloadSlider();
+	})})
+	window.onresize = function(event) {
+		reloadSlider();};
+	</script>
+
+	</body>
+
+	<script>
+		AOS.init();
+	  </script>
+</html>
