@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/information.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NisitPhaThiao</title>
+
+	<!-- scripts -->
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+<body>
+
+	<div class="gotopbtn">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+
+		<div class="loader"></div>
+
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="img/logo.png" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+<div class="big">
+	<div class="container_information">
+
+		<div class="links_information">
+			<a href="#">หน้าหลัก</a>
+			<span>•</span>
+			<a href="#">สถานที่ท่องเที่ยว</a>
+			<span>•</span>
+			<a href="#">ภาคกลาง</a>
+			<span>•</span>
+			<span>วัดมหาธาตุ ชัยนาท</span>
+		</div>
+		<span class="title">วัดมหาธาตุ ชัยนาท</span>
+		<div class="image_title">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/371b0583-6f85-4d6a-8182-94213a0aae0b.jpg" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+		<div class="information_details" data-aos="fade-up" data-aos-duration="1000">
+			<p>วัดมหาธาตุ ตั้งอยู่ที่ ตำบลแพรกศรีราชา อำเภอสรรค์บุรี จังหวัดชัยนาท ที่เป็นทั้งโบราณสถาน และ วัดดัง ที่สำคัญของจังหวัดชัยนาทเลย โดยวัดเก่าแก่นี้<br>เป็นโบราณคู่เมืองแพรกหรือเมืองสรรค์มาอย่างยาวนานแล้ว
+			เมื่อก่อนนั้นจะใช้ชื่อว่า วัดพระธาตุ หรือ วัดหัวเมือง ซึ่งมีประวัติก่อสร้างมาก่อนสมัยกรุงศรีอยุธยานั่นเอง
+			จะเห็นได้จากโบราณสถานที่มีความสำคัญทางประวัติศาสตร์ นั่นก็คือ พระปรางค์กลีบมะเฟือง ที่สร้างด้วยอิฐถือปูนสามองค์ ตั้งอยู่บนฐานสี่เหลื่ยม โดยเป็นศิลปะ<br>ในสมัยลพบุรี อีกทั้งมีพระพุทธรูปที่แบ่งเป็นสองจำพวกได้ คือ ศิลปะแบบลพบุรีและอยุธยาตอนต้น และยังมีพิพิธภัณฑ์ ที่เก็บรักษาสิ่งของโบราณต่างๆ
+				
+				<br>
+				<br>ซึ่งในสมัยกรุงศรีอยุธยาเป็นราชธานีนั้น วัดมหาธาตุ ก็ได้ถูกใช้เป็นท้องพระโรงของผู้ครองเมืองสรรคบุรี และได้มีการขยายวิหารหลวง ระเบียงคดไปทางทิศเหนือ<br>สมัยที่เจ้ายี่พระยามาครองเมืองสรรคบุรีด้วย และหลังจากนี้ก็ได้มีการบูรณะวัดมหาธาตุเรื่อยมา จนมาถึงช่วงเสียกรุงศรีอยุธยาครั้งที่ 2 <br>เมืองสรรคบุรีจึงได้โดนทิ้งร้างอยู่ จนเมื่อวันที่ 7 ตุลาคม ปีพ.ศ. 2444 ในหลวงรัชกาลที่ 5 ก็ได้เสด็จมายังวัดแห่งนี้
+				
+				<br>
+				<br>
+				<br>ข้อมูลและภาพจาก : <a href="https://travel.trueid.net/detail/alebkArvbWkE">https://travel.trueid.net</a>
+			</p>
+		</div>
+
+		<div class="slider" style="margin-top: 90px;" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="list">
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://www.finearts.go.th/uploads/tinymce/source/13/Knowledge2563/0126/1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://www.thebangkokinsight.com/wp-content/uploads/2020/09/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8-%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%971-700x467.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://k7w3n7p2.rocketcdn.me/wp-content/uploads/2022/09/Wat-Maha-That-Chai-Nat-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons" >
+                <button id="prev" ><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+		<div class="hotel">
+			<h class="border">ที่พักน่าสนใจ</h>
+			<div class="hotel-card">
+				<div class="hotel-image" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.18169-9/26169239_1563913940365970_2766190849417456305_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=S_jN4OScK2EAX8FsuOJ&_nc_ht=scontent.fbkk12-2.fna&oh=00_AfBAuMipMwY-ycpqSWDS44LMbPlC4er1I8wmKj9ELdBhSQ&oe=660569CC" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel" data-aos="fade-up" data-aos-duration="1000">บ้านสวนรีสอร์ท & กาแฟสด</div>
+					<div class="details_hotel" data-aos="fade-up" data-aos-duration="1000">247 ม.1 ต.ท่าชัย อ.เมืองชัยนาท จ.ชัยนาท 17000</div>
+					<p data-aos="fade-up" data-aos-duration="1000">บ้านสวนรีสอร์ท&กาแฟสด บริการห้องพักราคาเริ่มต้น 500 บาท ครบครันด้วยสิ่งอำนวยความสะดวก TV LED แอร์ ตู้เย็น เครื่องทำน้ำอุ่น ฟรี Wi-Fi ฟรีอาหารเช้า ท่ามกลางธรรมชาติ วิวทุ่งนาสวย<br>ใกล้สวนนกชัยนาท เพียง 5 นาทีถึงเขื่อนเจ้าพระยา นอกจากนี้ยังมีบริการร้านคาเฟ่กาแฟสด<br>เครื่องดื่ม เค้ก และขนมอีกมากมาย</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://th.tripadvisor.com/Hotel_Review-g775406-d14008351-Reviews-BaanSuan_Resort_coffee-Chai_Nat_Chainat_Province.html" class="card-btn2">https://th.tripadvisor.com/Reviews-BaanSuan_Resort_coffee</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="map">
+			<div class="border"></div>
+			<h3>Google Maps</h3>
+			<iframe data-aos="zoom-in" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15411.850782268599!2d100.1607398!3d15.0501795!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e1916ffb0c9641%3A0x8655f13fd560d47d!2z4Lin4Lix4LiU4Lih4Lir4Liy4LiY4Liy4LiV4Li4IOC4iuC4seC4ouC4meC4suC4lw!5e0!3m2!1sth!2sth!4v1710137954172!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+	</div>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="https://cdn.discordapp.com/attachments/1206996211622612992/1211962517715292170/logo.png?ex=65f01b0d&is=65dda60d&hm=50bb595884194bb60ea902a60cad2600879d868cd7280264cd3b4e93bbba63cd&" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="ภาคกลาง.html">หน้าหลัก</a></li>
+					<li><a href="#">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="#">ที่พักแนะนำ</a></li>
+					<li><a href="#">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ที่อยู่</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+	<script>
+		let slider = document.querySelector('.slider .list');
+		let items = document.querySelectorAll('.slider .list .item');
+		let next = document.getElementById('next');
+		let prev = document.getElementById('prev');
+		let dots = document.querySelectorAll('.slider .dots li');
+
+		let lengthItems = items.length - 1;
+		let active = 0;
+	next.onclick = function(){
+	active = active + 1 <= lengthItems ? active + 1 : 0;
+	reloadSlider();
+		}
+	prev.onclick = function(){
+	active = active - 1 >= 0 ? active - 1 : lengthItems;
+		reloadSlider();
+		}
+	let refreshInterval = setInterval(()=> {next.click()}, 3000);
+	function reloadSlider(){
+	slider.style.left = -items[active].offsetLeft + 'px';
+	let last_active_dot = document.querySelector('.slider .dots li.active');
+	last_active_dot.classList.remove('active');
+	dots[active].classList.add('active');
+
+	clearInterval(refreshInterval);
+	refreshInterval = setInterval(()=> {next.click()}, 7500); //เวลารูป
+	}
+	dots.forEach((li, key) => {
+	li.addEventListener('click', ()=>{
+	 active = key;
+		 reloadSlider();
+	})})
+	window.onresize = function(event) {
+		reloadSlider();};
+	</script>
+
+	</body>
+
+	<script>
+		AOS.init();
+	  </script>
+</html>

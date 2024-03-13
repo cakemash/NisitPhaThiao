@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/information.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NisitPhaThiao</title>
+
+	<!-- scripts -->
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+<body>
+
+	<div class="gotopbtn">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+
+		<div class="loader"></div>
+
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="img/logo.png" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+<div class="big">
+	<div class="container_information">
+
+		<div class="links_information">
+			<a href="#">หน้าหลัก</a>
+			<span>•</span>
+			<a href="#">สถานที่ท่องเที่ยว</a>
+			<span>•</span>
+			<a href="#">ภาคเหนือ</a>
+			<span>•</span>
+			<span>ภูชี้ฟ้า เชียงราย</span>
+		</div>
+		<span class="title">ภูชี้ฟ้า เชียงราย</span>
+		<div class="image_title">
+			<img src="https://cms.dmpcdn.com/travel/2020/08/27/15671d00-e823-11ea-ae33-b93941e2745d_original.jpg" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+		<div class="information_details" data-aos="fade-up" data-aos-duration="1000">
+			<p>ภูชี้ฟ้า เป็นยอดเขาสูงที่สุดในเทือกเขาดอยผาหม่น อยู่ติดพรมแดนไทย-ลาว ตั้งอยู่ในอำเภอเทิง จังหวัดเชียงราย มีเอกลักษณ์ทางธรรมชาติที่สวยงาม <br>เพราะมีหน้าผาปลายยอดแหลม เป็นแนวยาวที่ชี้ไปบนฟ้าทางฝั่งประเทศลาว เลยทำให้เป็นที่มาของชื่อ ภูชี้ฟ้า นั่นเอง ที่นี่จะอยู่สูงกว่า 1,200 - 1,628 เมตรเลย <br>และจุดสูงสุดคือบริเวณจุดชมวิว นี่เอง
+			ไฮไลท์สำคัญของ ภูชี้ฟ้า ก็คือ จุดชมวิวทะเลหมอกและพระอาทิตย์ขึ้นที่สวยงามมาก ด้วยความที่วิวทิวทัศน์ของภูเขานั้น <br>วางสลับซับซ้อนอย่างสวยงาม ทำให้เกิดเป็นภาพบรรยากาศสวยๆ ในตอนเช้าที่จะมีทะเลหมอกปกคลุมในหุบเขาด้านล่าง สวยงามราวกับภาพวาดอย่างนั้นเลย <br>และยังสามารถมองเห็นสายน้ำโขงไหลคดเคี้ยว อยู่ท่ามกลางป่าไม้ของฝั่งลาวที่สวยไม่แพ้ที่ไหนๆ อีกด้วย
+				
+				<br>
+				<br>ในช่วงฤดูหนาวนั้น ที่นี่จะฮอตฮิตมากๆ และหนาแน่นไปด้วยนักท่องเที่ยวที่จะเดินทางเข้ามาสัมผัสความหนาว ชมทะเลหมอกยามเช้า และดื่มด่ำความสวยงาม<br>ของดอกชงโคป่าสีขาวที่ออกดอก บานไปทั่วทั้งบริเวณกัน ส่วนช่วงเดือนธันวาคม ถึง มกราคม เส้นทางขึ้น ภูชี้ฟ้า จะผ่านซากุระ หรือ ต้นนางพญาเสือโคร่ง <br>ที่บานชมพูสวยงาม ไม่ควรพลาดเลย
+				
+				<br>
+				<br>
+				<br>ข้อมูลและภาพจาก : <a href="https://travel.trueid.net/detail/bvvA2d3k68b">https://travel.trueid.net</a>
+			</p>
+		</div>
+
+		<div class="slider" style="margin-top: 90px;" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="list">
+                <div class="item">
+                    <img src="https://dimg04.c-ctrip.com/images/0M74q12000920ohu93BDF.png_.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://cms.dmpcdn.com/travel/2020/08/27/0b2eb050-e823-11ea-ae1b-eba7d6e656f6_original.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://cms.dmpcdn.com/travel/2020/08/27/15671d00-e823-11ea-ae33-b93941e2745d_original.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://cms.dmpcdn.com/travel/2020/08/27/2510d160-e823-11ea-ae33-b93941e2745d_original.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons" >
+                <button id="prev" ><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+		<div class="hotel">
+			<h class="border">ที่พักน่าสนใจ</h>
+			<div class="hotel-card">
+				<div class="hotel-image" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="https://roijang.com/wp-content/uploads/2024/01/5e3491fe98f06681c3bba9c39d7625a9.jpg" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel" data-aos="fade-up" data-aos-duration="1000">ภูชี้ฟ้าวิวรีสอร์ท</div>
+					<div class="details_hotel" data-aos="fade-up" data-aos-duration="1000">43/1 ม.24 ต.ตับเต่า อ.เทิง จ.เชียงราย 57160</div>
+					<p data-aos="fade-up" data-aos-duration="1000">ที่พักให้บริการที่จอดรถฟรีเพื่อการเดินทางเข้าออกที่พักได้อย่างสะดวกสบาย รวมถึง Wi-Fi ฟรี<br>ให้ท่องเน็ตได้ทุกเมื่อ ที่พักตั้งอยู่ในย่านเวียงแก่น ของเวียงแก้ว จังหวัดเชียงราย ผู้เข้าพักจึงได้อยู่ใกล้สถานที่ท่องเที่ยวน่าสนใจและร้านอาหารอร่อยๆ ที่พัก 4 ดาว นี้มีสิ่งอำนวยความสะดวกที่จะช่วยเพิ่ม<br>ความผ่อนคลายสูงสุด</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://www.agoda.com/th-th/phuchifafaedviewresort/hotel/wiang-kaen-chiang-rai-th.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1881702&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-03-8&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=THB&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=4%2C16%2C8&los=1&searchrequestid=d41ad988-8535-44f0-a26a-a81d2c68f01f&ds=b70ck1WGsx0arrMv" class="card-btn2">https://www.agoda.com/phuchifafaedviewresort</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="map">
+			<div class="border"></div>
+			<h3>Google Maps</h3>
+			<iframe data-aos="zoom-in" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30021.995057468543!2d100.4363793!3d19.8505544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d7d01d7347842b%3A0x1e5958bd3a8ded57!2z4Lit4Li44LiX4Lii4Liy4LiZ4LmB4Lir4LmI4LiH4LiK4Liy4LiV4Li04Lig4Li54LiK4Li14LmJ4Lif4LmJ4Liy!5e0!3m2!1sth!2sth!4v1710145773940!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+	</div>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="https://cdn.discordapp.com/attachments/1206996211622612992/1211962517715292170/logo.png?ex=65f01b0d&is=65dda60d&hm=50bb595884194bb60ea902a60cad2600879d868cd7280264cd3b4e93bbba63cd&" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="ภาคกลาง.html">หน้าหลัก</a></li>
+					<li><a href="#">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="#">ที่พักแนะนำ</a></li>
+					<li><a href="#">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ที่อยู่</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+	<script>
+		let slider = document.querySelector('.slider .list');
+		let items = document.querySelectorAll('.slider .list .item');
+		let next = document.getElementById('next');
+		let prev = document.getElementById('prev');
+		let dots = document.querySelectorAll('.slider .dots li');
+
+		let lengthItems = items.length - 1;
+		let active = 0;
+	next.onclick = function(){
+	active = active + 1 <= lengthItems ? active + 1 : 0;
+	reloadSlider();
+		}
+	prev.onclick = function(){
+	active = active - 1 >= 0 ? active - 1 : lengthItems;
+		reloadSlider();
+		}
+	let refreshInterval = setInterval(()=> {next.click()}, 3000);
+	function reloadSlider(){
+	slider.style.left = -items[active].offsetLeft + 'px';
+	let last_active_dot = document.querySelector('.slider .dots li.active');
+	last_active_dot.classList.remove('active');
+	dots[active].classList.add('active');
+
+	clearInterval(refreshInterval);
+	refreshInterval = setInterval(()=> {next.click()}, 7500); //เวลารูป
+	}
+	dots.forEach((li, key) => {
+	li.addEventListener('click', ()=>{
+	 active = key;
+		 reloadSlider();
+	})})
+	window.onresize = function(event) {
+		reloadSlider();};
+	</script>
+
+	</body>
+
+	<script>
+		AOS.init();
+	  </script>
+</html>

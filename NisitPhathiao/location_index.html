@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/location.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NisitPhaThiao</title>
+
+	<!-- scripts -->
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Google Fonts Link For Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+
+<body>
+
+	<div class="gotopbtn">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+
+		<div class="loader"></div>
+
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="https://cdn.discordapp.com/attachments/1206996211622612992/1211962517715292170/logo.png?ex=65f01b0d&is=65dda60d&hm=50bb595884194bb60ea902a60cad2600879d868cd7280264cd3b4e93bbba63cd&" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+<div class="big">
+	<div class="container_location">
+		<h1 class="section__title" data-aos="fade-up" data-aos-duration="1000">สถานที่ท่องเที่ยวภาคกลาง</h1>
+		<p class="section__subtitle" data-aos="fade-up" data-aos-duration="1000">สถานที่ท่องเที่ยวที่น่าสนใจทั้งหมดของภาคกลาง</p>
+	
+	<div class="card_location">
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/db3c830e-3555-4b0f-b250-5cf4e28ef1c9.jpg"></a>
+			<div class="card-content">
+				<h>น้ำตกสาลิกา นครนายก</h>
+			</div>
+		</div>
+
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/371b0583-6f85-4d6a-8182-94213a0aae0b.jpg"></a>
+			<div class="card-content">
+				<h>วัดมหาธาตุ ชัยนาท</h>
+			</div>
+		</div>
+
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/301d2877-cbf6-450b-8442-426ff66b57b6.jpg"></a>
+			<div class="card-content">
+				<h>อ่างเก็บน้ำหุบวง สุพรรณบุรี</h>
+			</div>
+		</div>
+
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/98f3d52d-3b6e-4707-b7db-0caab4148596.jpg"></a>
+			<div class="card-content">
+				<h>ภูทับเบิก เพชรบูรณ์</h>
+			</div>
+		</div>
+
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/69393883-84dc-458c-a8b1-fdbe90569944.jpg"></a>
+			<div class="card-content">
+				<h>วัดไชยวัฒนาราม พระนครศรีอยุธยา</h>
+			</div>
+		</div>
+
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2021/02/08/90165de0-69c9-11eb-8623-672bded2bd39_original.jpg"></a>
+			<div class="card-content">
+				<h>อุโมงค์ป่าไผ่ วัดจุฬาภรณ์วนาราม นครนายก</h>
+			</div>
+		</div>
+
+		<div class="card_details" data-aos="zoom-in" data-aos-duration="1000">
+			<a href="#">
+			<img src="https://cms.dmpcdn.com/travel/2018/04/02/12579659-8bc4-4624-9d58-1f9752f81a99.jpg"></a>
+			<div class="card-content">
+				<h>เขื่อนป่าสักชลสิทธิ์ ลพบุรี</h>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="https://cdn.discordapp.com/attachments/1206996211622612992/1211962517715292170/logo.png?ex=65f01b0d&is=65dda60d&hm=50bb595884194bb60ea902a60cad2600879d868cd7280264cd3b4e93bbba63cd&" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="ภาคกลาง.html">หน้าหลัก</a></li>
+					<li><a href="#">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="#">ที่พักแนะนำ</a></li>
+					<li><a href="#">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ที่อยู่</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+	<script>
+		AOS.init();
+	  </script>
+	</body>
+</html>

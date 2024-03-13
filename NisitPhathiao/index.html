@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/tour.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>NisitPhaThiao</title>
+
+	<!-- scripts -->
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+<body>
+	<div class="gotopbtn">
+	<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+	</div>
+
+	<div class="loader"></div>
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="img/logo.png" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+
+
+	<div class="container_tour">
+    <section class="section__container tour__container" data-aos="fade-up" data-aos-duration="1000">
+		<div class="tour__card">
+		  <div class="tour__card__details">
+			<a href="north.html">ภาคเหนือ</a>
+		  </div>
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Intanon_03.jpg/1200px-Intanon_03.jpg" alt="tour" width="300" height="300" />
+		</div>
+		<div class="tour__card">
+		  <div class="tour__card__details1">
+			<a href="east.html">ภาคตะวันออก<br>เฉียงเหนือ</a>
+		  </div>
+		  <img src="https://www.govivigo.com/content/news/5e5e41f69a771c1003000022-2.jpg" alt="tour" width="300" height="300"/>
+		</div>
+		<div class="tour__card3">
+		  <div class="tour__card__details3">
+			<a href="index.html">ภาคกลาง</a>
+		  </div>
+		  <img src="https://roijang.com/wp-content/uploads/2023/07/shutterstock_299388287.jpg" alt="tour" width="300" height="300"/>
+		</div>
+		<div class="tour__card">
+		  <div class="tour__card__details">
+			<a href="south.html">ภาคใต้</a>
+		  </div>
+		  <img src="https://roijang.com/wp-content/uploads/2023/02/%E0%B9%80%E0%B8%9E%E0%B8%88%E0%B8%A3%E0%B8%A7%E0%B8%A1-16-3.jpg" alt="tour" width="300" height="300"/>
+		</div>
+	  </section>
+	</div>
+
+
+
+
+	<!-- Contents -->
+	<div class="container">
+		<h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">สถานที่ท่องเที่ยวแนะนำ</h2>
+		<p class="section__subtitle" data-aos="fade-up" data-aos-duration="1000">สถานที่ท่องเที่ยวที่น่าสนใจของภาคกลาง</p>
+	<div class="card">
+  	<div class="card1" data-aos="fade-up" data-aos-duration="1000">
+    	<img src="https://cms.dmpcdn.com/travel/2018/04/02/db3c830e-3555-4b0f-b250-5cf4e28ef1c9.jpg" alt="รูปภาพ" width="200" height="200">
+  			<h1>น้ำตกสาลิกา นครนายก</h1>
+  			<p>น้ำตกสาริกาน้ำตกขนาดใหญ่ไหลลงจากหน้าผา<br>ถึง 9 ชั้น กับธรรมชาติสีเขียวขจีมีมุมสวยๆ ไว้ให้เล่นน้ำ ถ่ายรูปชิลๆ ยิ่งถ้าไปในฤดูฝนก็จะมีน้ำมากเป็นพิเศษ จึงทำให้ส่วนใหญ่จะมีนักท่องเที่ยวเลือกที่จะไป<br>ช่วงหน้าฝน เพราะเห็นธรรมชาติได้อย่างเต็มที่<br>และสมบูรณ์เหมาะกับการเล่นน้ำสุดๆ</p>
+			<a href="information.html" class="card-btn">ดูรายละเอียด</a>
+	</div>
+		<div class="card1" data-aos="fade-up" data-aos-duration="1500">
+    	<img src="https://cms.dmpcdn.com/travel/2018/04/02/371b0583-6f85-4d6a-8182-94213a0aae0b.jpg" alt="รูปภาพ" width="200" height="200">
+  			<h1>วัดมหาธาตุ ชัยนาท</h1>
+  			<p>วัดมหาธาตุ หรือ วัดหัวเมือง แหล่งโบราณสถานที่สำคัญของจังหวัดชัยนาทที่ถูกสร้างขึ้นสมัย<br>กรุงศรีอยุธยา ภายในวัดจะเห็น พิพิธภัณฑ์วัดพระธาตุ พระปรางค์กลีบมะเฟือง รวมถึงรอยพระพุทธบาท<br>เก่าแก่ และหลวงพ่อใหญ่อายุกว่า 700 ปี ใครที่ชอบแหล่งโบราณสถานต้องห้ามพลาด</p>
+			<a href="#" class="card-btn">ดูรายละเอียด</a>
+
+		</div>
+		<div class="card1" data-aos="fade-up" data-aos-duration="2000">
+    	<img src="https://cms.dmpcdn.com/travel/2018/04/02/301d2877-cbf6-450b-8442-426ff66b57b6.jpg" alt="รูปภาพ" width="200" height="200">
+  			<h1>อ่างเก็บน้ำหุบวง สุพรรณบุรี</h1>
+  			<p>พักในแพเหนือน้ำกลางป่า บรรยากาศโรแมนติกเหมาะ<br>ที่จะไปพักผ่อนร่างกาย รับบรรยากาศบริสุทธิ์ชิลล์ๆ หรือว่าจะกางเต็นท์นอนสบายๆ ใกล้ชิดธรรมชาติก็ดี<br>ไปอีกแบบ ภายในอ่างเก็บน้ำจะมีเรือพาย และจักรยานไว้คอยบริการให้กับนักท่องเที่ยวด้วย<br>สามารถแชะภาพรัวๆ ได้ทุกมุม</p>
+			<a href="#" class="card-btn">ดูรายละเอียด</a>
+			
+		</div>
+	</div>
+	</div>
+	
+	<!-- hotel -->
+	<div class="container2">
+		<h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">ที่พักแนะนำ</h2>
+		<p class="section__subtitle" data-aos="fade-up" data-aos-duration="1000">สถานที่พักแนะนำของภาคกลาง</p>
+	<div class="card-container" >
+		<div class="card-1" data-aos="zoom-in" data-aos-duration="1000">
+			<div class="card-image-1">
+				<img src="https://itravel.in.th/wp-content/uploads/2019/09/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%A2%E0%B8%B2%E0%B8%A2-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%82%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%94%E0%B9%88%E0%B8%B2%E0%B8%99-itravel.jpg" alt="image" />
+			</div>
+			<div class="card-text-1">
+				<h2>บ้านสวนคุณยาย</h2>
+				<p>ที่พักให้บริการที่จอดรถฟรีเพื่อการเดินทางเข้าออกที่พักได้อย่างสะดวกสบาย รวมถึง    Wi-Fi ฟรีให้ท่องเน็ต<br>ได้ทุกเมื่อ ที่พักตั้งอยู่ในย่านเมืองนครนายก จึงอยู่ใกล้กับที่เที่ยวมากมาย และสะดวกต่อการเดินทางไปสถานที่ต่างๆ ทริปยังไม่จบถ้าไม่ได้แวะไปที่เที่ยวชื่อดังอย่าง อุทยานแห่งชาติเขาใหญ่ ด้วยอีกสักที่ ที่พักมีสระว่ายน้ำในร่ม,<br>สระว่ายน้ำกลางแจ้ง และ ห้องอาหาร ช่วยให้วันพักผ่อนสะดวกสบายผ่อนคลายขึ้นไปอีกขั้น</p>
+				<span>ดูรีวิวเต็มๆที่</span><a href="https://www.agoda.com/baan-suan-khun-yaiy/hotel/nakhon-nayok-th.html?cid=1844104" class="card-btn2">https://www.agoda.com/baan-suan-khun-yaiy</a>
+			</div>
+		</div>
+		<div class="card-1" data-aos="zoom-in" data-aos-duration="1000">
+			<div class="card-image-1">
+				<img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.18169-9/26169239_1563913940365970_2766190849417456305_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=S_jN4OScK2EAX8FsuOJ&_nc_ht=scontent.fbkk12-2.fna&oh=00_AfBAuMipMwY-ycpqSWDS44LMbPlC4er1I8wmKj9ELdBhSQ&oe=660569CC" alt="image" />
+			</div>
+			<div class="card-text-1">
+				<h2>บ้านสวนรีสอร์ท & กาแฟสด</h2>
+				<p>บ้านสวนรีสอร์ท&กาแฟสด บริการห้องพักราคาเริ่มต้น 500 บาท ครบครันด้วยสิ่งอำนวยความสะดวก TV LED แอร์ ตู้เย็น เครื่องทำน้ำอุ่น ฟรีไวไฟ ฟรีอาหารเช้า ท่ามกลางธรรมชาติ วิวทุ่งนาสวย ใกล้สวนนกชัยนาท เพียง 5 นาที<br>ถึงเขื่อนเจ้าพระยา นอกจากนี้ยังมีบริการร้านคาเฟ่กาแฟสด เครื่องดื่ม เค้ก และขนมอีกมากมาย</p>
+				<span>ดูรีวิวเต็มๆที่</span><a href="https://th.tripadvisor.com/Hotel_Review-g775406-d14008351-Reviews-BaanSuan_Resort_coffee-Chai_Nat_Chainat_Province.html" class="card-btn2">https://th.tripadvisor.com/Reviews-BaanSuan_Resort_coffee</a>
+			</div>
+		</div>
+		<div class="card-1" data-aos="zoom-in" data-aos-duration="1000">
+			<div class="card-image-1">
+				<img src="https://www.tripgether.com/wp-content/uploads/tripgetter/Dan_4.jpg" alt="image" />
+			</div>
+			<div class="card-text-1" >
+				<h2>ด่านช้างกรีนวิว รีสอร์ท</h2>
+				<p>ด่านช้างกรีนวิวรีสอร์ท รีสอร์ทที่โอบล้อมไปด้วยธรรมชาติ เป็นรีสอร์ทที่ครบครันในเรื่องของสิ่งอำนวยความสะดวกและกิจกรรมมากมายที่ให้เราได้สัมผัส บรรยากาศเงียบสงบ เป็นส่วนตัว เหมาะสำหรับวันหยุดสุดพิเศษ มาได้ทั้งครอบครัว รวมถึงน้องหมาด้วย</p>
+				<span>ดูรีวิวเต็มๆที่</span><a href="https://www.wongnai.com/hotels/2346427Sf-%E0%B8%94%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%A7-%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97" class="card-btn2">https://www.wongnai.com/hotels/ด่านช้างกรีนวิว-รีสอร์ท</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- tour -->
+<div class="container3">
+		<h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">สถานที่ท่องเที่ยวอื่นๆที่น่าสนใจ</h2>
+		<p class="section__subtitle" data-aos="fade-up" data-aos-duration="1000">สถานที่ท่องเที่ยวอื่นๆที่น่าสนใจของภาคกลาง</p>
+	<div class="main">
+	<div class="tour__card2" data-aos="zoom-in" data-aos-duration="1000">
+		<div class="tour__card__details2">
+			<a href="#">
+			<p>ภูทับเบิก เพชรบูรณ์</p>
+		</div>
+		<img src="https://cms.dmpcdn.com/travel/2018/04/02/98f3d52d-3b6e-4707-b7db-0caab4148596.jpg" /></a>
+	</div>
+	<div class="tour__card2" data-aos="zoom-in" data-aos-duration="500">
+		<div class="tour__card__details2">
+			<a href="#">
+			<p>วัดไชยวัฒนาราม พระนครศรีอยุธยา</p>
+		</div>
+		<img src="https://cms.dmpcdn.com/travel/2018/04/02/69393883-84dc-458c-a8b1-fdbe90569944.jpg" /></a>
+	</div>
+	<div class="tour__card2" data-aos="zoom-in" data-aos-duration="1000">
+		<div class="tour__card__details2">
+			<a href="#">
+			<p>อุทยานแห่งชาติภูสอยดาว พิษณุโลก</p>
+		</div>
+		<img src="https://cms.dmpcdn.com/travel/2018/04/02/3299b381-8468-4649-8b01-3be0c901f6d9.jpg" /></a>
+	</div>
+	<div class="tour__card2" data-aos="zoom-in" data-aos-duration="500">
+		<div class="tour__card__details2">
+			<a href="#">
+			<p>เขื่อนป่าสักชลสิทธิ์ ลพบุรี</p>
+		</div>
+		<img src="https://cms.dmpcdn.com/travel/2018/04/02/12579659-8bc4-4624-9d58-1f9752f81a99.jpg" /></a>
+	</div>
+	</div>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="https://cdn.discordapp.com/attachments/1206996211622612992/1211962517715292170/logo.png?ex=65f01b0d&is=65dda60d&hm=50bb595884194bb60ea902a60cad2600879d868cd7280264cd3b4e93bbba63cd&" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="index.html">หน้าหลัก</a></li>
+					<li><a href="location_index.html">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+					<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ที่อยู่</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+
+	<script>
+		AOS.init();
+	  </script>
+	</body>
+</html>
