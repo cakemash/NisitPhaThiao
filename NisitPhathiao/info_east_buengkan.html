@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0267212ef0.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/information.css" />
+	<link href="animate/animate.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NisitPhaThiao</title>
+
+	<!-- scripts -->
+	<script src="java/jquery.min.js"></script>
+	<script src="java/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+<body>
+
+	<div class="gotopbtn">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+		</div>
+
+		<div class="loader"></div>
+
+	<header>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo"><a href="index.html">
+				<img src="img/logo.png" height="90px" width="190px">
+			</a></div>
+			<ul class="links">
+				<li><a href="index.html">หน้าหลัก</a></li>
+				<li>
+					<a href="#">สถานที่ท่องเที่ยว ▾</a>
+					<ul class="dropdown">
+						<li><a href="location_north.html">ภาคเหนือ</a></li>
+						<li><a href="location_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+						<li><a href="index.html">ภาคกลาง</a></li>
+						<li><a href="location_south.html">ภาคใต้</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ที่พักแนะนำ ▾</a>
+				<ul class="dropdown">
+					<li><a href="hotel_north.html">ภาคเหนือ</a></li>
+					<li><a href="hotel_east.html">ภาคตะวันออกเฉียงเหนือ</a></li>
+					<li><a href="hotel_index.html">ภาคกลาง</a></li>
+					<li><a href="hotel_south.html">ภาคใต้</a></li>
+				</ul>
+				</li>
+				<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+			</ul>
+			<a href="#" class="action_btn">Test</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">หน้าหลัก</a></li>
+			<li><a href="location_index.html">สถานที่ท่องเที่ยว</a>
+			<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+			<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+	</script>
+	<!-- Hero -->
+	<main>
+		<section id="hero" data-aos="fade-down" data-aos-duration="1500">
+			<h1>นิสิตพาเที่ยว</h1>
+			<p>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้ <br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค <br>หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p>
+		</section>
+	</main>
+
+<div class="big">
+	<div class="container_information">
+
+		<div class="links_information">
+			<a href="index.html">หน้าหลัก</a>
+			<span>•</span>
+			<a href="location_east.html">สถานที่ท่องเที่ยว</a>
+			<span>•</span>
+			<a href="east.html">ภาคตะวันออกเฉียงเหนือ</a>
+			<span>•</span>
+			<span>หินสามวาฬ บึงกาฬ</span>
+		</div>
+		<span class="title">หินสามวาฬ บึงกาฬ</span>
+		<div class="image_title">
+			<img src="https://cms.dmpcdn.com/travel/2020/04/15/baebf200-7f14-11ea-a85e-972275699d5e_original.jpg" data-aos="zoom-in" data-aos-duration="1000"></div>
+
+		<div class="information_details" data-aos="fade-up" data-aos-duration="1000">
+			<p>หินสามวาฬ หนึ่งในจุดสถานที่ท่องเที่ยวของ ภูสิงห์ จังหวัดบึงกาฬ ตั้งอยู่ภายในเขตพื้นที่อนุรักษ์ในเขตป่าสงวนแห่งชาติป่าดงดิบกะลา ป่าภูสิงห์ และป่าดงสีชมพู <br>อีกที โดยบริเวณนี้จะเต็มไปด้วยกลุ่มก้อนหินรูปทรงต่างๆ หน้าผา และถ้ำ กระจายอยู่ทั่วพื้นที่ เกิดเป็นความสวยงามในแบบต่างๆ ที่ทำให้นักท่องเที่ยวอยากจะเดินทางมาเห็นด้วยตาตัวเองนั่นเอง
+
+				
+				<br>
+				<br>โดยที่บริเวณของ หินสามวาฬ นั้น จะเป็นหินขนาดใหญ่ติดหน้าผาสูง แยกตัวเป็น 3 ก้อนใหญ่ๆ เรียงต่อกัน มีอายุประมาณ 75 ล้านปี เลยทีเดียว ความพิเศษของหินก็คือ เมื่อมองดูจากระยะไกลๆ หินสามก้อนนี้จะดูคล้ายกับฝูงครอบครัววาฬ มีทั้งพ่อวาฬ แม่วาฬ และลูกวาฬ นั่นเอง ซึ่งก็จะถูกเรียกตามขนาดของหินแต่ละก้อน<br> แต่ความ Unseen ของ หินสามวาฬ นั้น ไม่ได้มีเพียงเท่านี้ เพราะที่นี่ยังเป็นหนึ่งใน จุดชมวิวที่สวยที่สุดในภูสิงห์ อีกด้วย โดยเฉพาะช่วงเวลาที่พระอาทิตย์ขึ้นพระอาทิตย์กำลังไต่ระดับขึ้นมาที่ขอบฟ้า เราจะได้เห็นแสงสีส้มของพระอาทิตย์ไล่เฉดสีกันอย่างสวยงามเลยทีเดียว 
+
+				<br>
+				<br>รวมไปถึงภาพวิวทิวทัศน์ที่อยู่ตรงหน้าแบบไกลสุดลูกหูลูกตา ที่สำคัญคือ เราจะได้เห็นผืนป่าสีเขียวที่อุดมสมบูรณ์ วิวของ ป่าภูวัว แก่งสะดอก ห้วยบังบาตร หาดทรายแม่น้ำโขง และภูเขาเมืองปากกระดิ่ง ประเทศลาว อีกด้วย และถ้ามองให้ดีๆ อาจจะเห็นแม่น้ำโขงอยู่ไกลๆ อีกด้วยนะ แบบนี้หาที่ไหนไม่ได้แล้วจริงๆ
+				<br>
+				<br>
+				<br>ข้อมูลและภาพจาก : <a href="https://travel.trueid.net/detail/7Mkbxrrndd2Z">https://travel.trueid.net</a>
+			</p>
+		</div>
+
+		<div class="slider" style="margin-top: 90px;" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="list">
+                <div class="item">
+                    <img src="https://fridayvacation.com//pic/163/5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://paikondieow.com/wp-content/uploads/2023/03/5-9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://fridayvacation.com//pic/163/32.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://reviewbuengkan.com/pic/9/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons" >
+                <button id="prev" ><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+		<div class="hotel">
+			<h class="border">ที่พักน่าสนใจ</h>
+			<div class="hotel-card">
+				<div class="hotel-image" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="https://ak-d.tripcdn.com/images/0224y12000aepmnfz48B9_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F" alt="image" />
+				</div>
+				<div class="hotel-text">
+					<div class="name_hotel" data-aos="fade-up" data-aos-duration="1000">เดอะลิตเติ้ล การ์เด้น รีสอร์ท</div>
+					<div class="details_hotel" data-aos="fade-up" data-aos-duration="1000">239 ม.5 ต.ศรีวิไล อ.ศรีวิไล จ.บึงกาฬ 38210</div>
+					<p data-aos="fade-up" data-aos-duration="1000">โรงแรมแห่งนี้อยู่ห่างออกไปเป็นระยะทาง 36.5 กม. จาก น้ำตกเจ็ดสี และ 40.5 กม. <br>จากน้ำตกถ้ำพระเดินชมวิวจากลานระเบียง และสวน หรือลองใช้บริการอื่นๆ<br>เช่น บริการ Wi-Fi ฟรีมีบริการอำนวยความสะดวก เช่น บริการซักรีด/ซักแห้ง<br>และฝ่ายต้อนรับ 24 ชั่วโมง ที่พักมีบริการที่จอดรถฟรี</p>
+					<span>ดูรีวิวเต็มๆที่</span><a href="https://th.trip.com/hotels/si-wilai-district-hotel-detail-9963473/the-little-garden-resort/" class="card-btn2">https://th.trip.com/hotels/the-little-garden-resort</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="map">
+			<div class="border"></div>
+			<h3>Google Maps</h3>
+			<iframe data-aos="zoom-in" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30311.786504784413!2d103.81015934877927!3d18.257044922550268!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313b27b3b35eb93d%3A0xecc3e981236229e0!2z4Lir4Li04LiZ4Liq4Liy4Lih4Lin4Liy4LisICjguKDguLnguKrguLTguIfguKvguYwg4Lia4Li24LiH4LiB4Liy4LisKQ!5e0!3m2!1sth!2sth!4v1710248908563!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+	</div>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<section class="container1">
+			<div class="about">
+				<img src="img/logo.png" height="90px" width="190px">
+				<p1><br>เว็บไซต์ที่จะพาไปท่องเที่ยวในไทย 4 ภาค ภาคเหนือ <br>ภาคตะวันออกเฉียงเหนือ ภาคกลาง และภาคใต้<br>รวมที่พักและที่เที่ยวฮิตๆ ในแต่ละภาค หิ้วกระเป๋าไปเที่ยวกับเว็บไซต์นิสิตพาเที่ยว รับรองไม่มีผิดหวัง</p1>
+
+			</div>
+			<div class="menu">
+				<h3>เมนู</h3>
+				<ul>
+					<li><a href="index.html">หน้าหลัก</a></li>
+					<li><a href="location_index.html">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="hotel_index.html">ที่พักแนะนำ</a></li>
+					<li><a href="about us.html">เกี่ยวกับเรา</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="contact">
+				<h3>ช่องทางติดต่อ</h3>
+				<ul>
+					<li>
+						ที่อยู่ : 39 ม.1 ถ.รังสิต - นครนายก <br>ต.คลองหก อ.คลองหลวง จ.ปทุมธานี 12110
+					</li>
+					<li>
+						โทร : 0 2549 4990
+					</li>
+					<li>
+						<a href="#">
+						อีเมล : nisitphathiao@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="copyright">Copyright &copy: NisitPhaThiao</section>
+	</footer>
+
+	<script>
+		let slider = document.querySelector('.slider .list');
+		let items = document.querySelectorAll('.slider .list .item');
+		let next = document.getElementById('next');
+		let prev = document.getElementById('prev');
+		let dots = document.querySelectorAll('.slider .dots li');
+
+		let lengthItems = items.length - 1;
+		let active = 0;
+	next.onclick = function(){
+	active = active + 1 <= lengthItems ? active + 1 : 0;
+	reloadSlider();
+		}
+	prev.onclick = function(){
+	active = active - 1 >= 0 ? active - 1 : lengthItems;
+		reloadSlider();
+		}
+	let refreshInterval = setInterval(()=> {next.click()}, 3000);
+	function reloadSlider(){
+	slider.style.left = -items[active].offsetLeft + 'px';
+	let last_active_dot = document.querySelector('.slider .dots li.active');
+	last_active_dot.classList.remove('active');
+	dots[active].classList.add('active');
+
+	clearInterval(refreshInterval);
+	refreshInterval = setInterval(()=> {next.click()}, 7500); //เวลารูป
+	}
+	dots.forEach((li, key) => {
+	li.addEventListener('click', ()=>{
+	 active = key;
+		 reloadSlider();
+	})})
+	window.onresize = function(event) {
+		reloadSlider();};
+	</script>
+
+	</body>
+
+	<script>
+		AOS.init();
+	  </script>
+</html>

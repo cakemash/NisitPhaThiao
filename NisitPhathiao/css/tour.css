@@ -1,0 +1,154 @@
+.container_tour {
+    background-color: rgb(245, 245, 245);
+    padding: 200px 300px 50px 320px;
+  }
+  .tour__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .tour__card {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    filter: grayscale(0.5);
+  }
+  
+  .tour__card__details {
+    position: absolute;
+    top: 2rem;
+    left: 45%;
+    transform: translateX(-45%);
+    color: #181818;
+    margin-top: 0.5rem;
+  }
+  
+  .tour__card__details1 {
+    position: absolute;
+    top: 2rem;
+    left: 40%;
+    transform: translateX(-36%);
+    color: #181818;
+    margin-top: 0.5rem;
+  }
+  
+  .tour__card__details1 a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+  }
+  
+  .tour__card__details a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.2em;
+  }
+  
+  .tour__card__details p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    width: fit-content;
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition: 0.3s;
+  }
+  
+  .tour__card img {
+    border-radius: 5px;
+    display: flex;
+    object-fit: cover;
+  }
+  
+  .tour__card {
+    transition: 0.5s;
+  }
+  
+  .tour__card:hover {
+    filter: grayscale(0);
+  }
+
+
+
+
+
+  .tour__card3 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    transform: scale(1.1);
+  }
+  
+  .tour__card__details3 {
+    position: absolute;
+    top: 2rem;
+    left: 45%;
+    transform: translateX(-45%);
+    color: #181818;
+    margin-top: 0.5rem;
+  }
+
+  .tour__card__details3 a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.2em;
+  }
+
+  .tour__card3 img {
+    border-radius: 5px;
+    display: flex;
+    object-fit: cover;
+  }
+  
+  .tour__card3 {
+    transition: 0.5s;
+  }
+
+
+
+
+
+  .tour__card1 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    transform: scale(1.1);
+  }
+
+  .tour__card3 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    transform: scale(1.1);
+  }
+  
+  .tour__card__details1 {
+    position: absolute;
+    top: 2rem;
+    left: 45%;
+    transform: translateX(-45%);
+    color: #181818;
+    margin-top: 0.5rem;
+  }
+
+  .tour__card__details1 a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.2em;
+  }
+
+  .tour__card1 img {
+    border-radius: 5px;
+    display: flex;
+    object-fit: cover;
+  }
+  
+  .tour__card1 {
+    transition: 0.5s;
+  }
+  
